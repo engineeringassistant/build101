@@ -1,6 +1,6 @@
 (function() {
     // Initialize EmailJS
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+    emailjs.init("WOLAltD2Kh8-SyZWg"); // Replace with your EmailJS Public Key
 
     // Booking Form submission
     const requestForm = document.getElementById("request-form");
@@ -16,7 +16,7 @@
                 details: document.getElementById("details").value
             };
 
-            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+            emailjs.send("service_q29ap6f", "YOUR_TEMPLATE_ID", formData)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert(`Thank you, ${formData.name}! Your ${formData.service} booking is confirmed.\nDetails:\n• Service: ${formData.service}\n• Project: ${formData.project_type}\n• Location: ${formData.location}\n• Details: ${formData.details}\nWe’ll contact you soon.`);
@@ -35,7 +35,7 @@
             event.preventDefault();
             const question = document.getElementById("qa-question").value;
             const answer = document.getElementById("qa-answer").value || "No answer provided.";
-            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", { question: question, answer: answer })
+            emailjs.send("service_q29ap6f", "YOUR_TEMPLATE_ID", { question: question, answer: answer })
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert(`Thank you! Your question "${question}" is under review.`);
@@ -54,7 +54,7 @@
             event.preventDefault();
             const title = document.getElementById("article-title").value;
             const content = document.getElementById("article-content").value;
-            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", { title: title, content: content })
+            emailjs.send("service_q29ap6f", "YOUR_TEMPLATE_ID", { title: title, content: content })
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert(`Thank you! Your article "${title}" is under review.`);
@@ -79,7 +79,7 @@
                 details: document.getElementById("join-details").value
             };
 
-            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+            emailjs.send("service_q29ap6f", "YOUR_TEMPLATE_ID", formData)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert(`Thank you, ${formData.name}! Your application has been received.\nDetails:\n• Experience: ${formData.experience} years\n• Skills: ${formData.skills}\n• Details: ${formData.details}\nWe’ll review it soon.`);
@@ -93,7 +93,7 @@
 })();
 (function() {
     // Initialize EmailJS
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+    emailjs.init("WOLAltD2Kh8-SyZWg"); // Replace with your EmailJS Public Key
 
     // Booking Form submission
     const requestForm = document.getElementById("request-form");
