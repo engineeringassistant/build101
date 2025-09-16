@@ -1,6 +1,8 @@
+(function()
+
 (function() {
-    // Initialize EmailJS
-    emailjs.init("WOLAltD2Kh8-SyZWg"); // Replace with your EmailJS Public Key
+    // Initialize EmailJS with your Public Key
+    emailjs.init("WOLAltD2Kh8-SyZWg"); // Your public key from EmailJS
 
     // Booking Form submission
     const requestForm = document.getElementById("request-form");
@@ -16,52 +18,14 @@
                 details: document.getElementById("details").value
             };
 
-            emailjs.send("service_q29ap6f", "template_5we4qr7", formData)
+            emailjs.send("service_q29ap6f", "template_ua8rjpb", formData) // Replace with your Service ID and Template ID
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    alert(`Thank you, ${formData.name}! Your ${formData.service} booking is confirmed.\nDetails:\n• Service: ${formData.service}\n• Project: ${formData.project_type}\n• Location: ${formData.location}\n• Details: ${formData.details}\nWe’ll contact you soon.`);
-                    document.getElementById("request-form").reset();
+                    alert(`Thank you, ${formData.name}! Your booking is confirmed.\nDetails:\n- Service: ${formData.service}\n- Project: ${formData.project_type}\n- Location: ${formData.location}\n- Details: ${formData.details}\nWe’ll contact you soon.`);
+                    requestForm.reset();
                 }, function(error) {
                     console.error('FAILED...', error);
                     alert(`Booking failed: ${error.text || 'Unknown error'}. Please try again or contact us.`);
-                });
-        });
-    }
-
-    // Q&A Form submission
-    const qaForm = document.getElementById("qa-form");
-    if (qaForm) {
-        qaForm.addEventListener("submit", function(event) {
-            event.preventDefault();
-            const question = document.getElementById("qa-question").value;
-            const answer = document.getElementById("qa-answer").value || "No answer provided.";
-            emailjs.send("service_q29ap6f", "template_5we4qr7", { question: question, answer: answer })
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    alert(`Thank you! Your question "${question}" is under review.`);
-                    document.getElementById("qa-form").reset();
-                }, function(error) {
-                    console.error('FAILED...', error);
-                    alert(`Submission failed: ${error.text || 'Unknown error'}. Please try again.`);
-                });
-        });
-    }
-
-    // Article Form submission
-    const articleForm = document.getElementById("article-form");
-    if (articleForm) {
-        articleForm.addEventListener("submit", function(event) {
-            event.preventDefault();
-            const title = document.getElementById("article-title").value;
-            const content = document.getElementById("article-content").value;
-            emailjs.send("service_q29ap6f", "template_5we4qr7, { title: title, content: content })
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    alert(`Thank you! Your article "${title}" is under review.`);
-                    document.getElementById("article-form").reset();
-                }, function(error) {
-                    console.error('FAILED...', error);
-                    alert(`Submission failed: ${error.text || 'Unknown error'}. Please try again.`);
                 });
         });
     }
@@ -79,15 +43,17 @@
                 details: document.getElementById("join-details").value
             };
 
-            emailjs.send("service_q29ap6f", "template_5we4qr7", formData)
+            emailjs.send("service_q29ap6f", "template_ua8rjpb", formData) // Replace with your Service ID and Template ID
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    alert(`Thank you, ${formData.name}! Your application has been received.\nDetails:\n• Experience: ${formData.experience} years\n• Skills: ${formData.skills}\n• Details: ${formData.details}\nWe’ll review it soon.`);
-                    document.getElementById("join-form").reset();
+                    alert(`Thank you, ${formData.name}! Your application has been received.\nDetails:\n- Experience: ${formData.experience} years\n- Skills: ${formData.skills}\n- Details: ${formData.details}\nWe’ll review it soon.`);
+                    joinForm.reset();
                 }, function(error) {
                     console.error('FAILED...', error);
-                    alert(`Application failed: ${error.text || 'Unknown error'}. Please try again.`);
+                    alert(`Application failed: ${error.text || 'Unknown error'}. Please try again or contact us.`);
                 });
         });
     }
-})();
+}
+
+
