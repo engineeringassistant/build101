@@ -1,10 +1,8 @@
-(function()
-
 (function() {
     // Initialize EmailJS with your Public Key
-    emailjs.init("WOLAltD2Kh8-SyZWg"); // Your public key from EmailJS
+    emailjs.init("OwQ8dyIlYQNPPzLaO");
 
-    // Booking Form submission
+     // Booking Form submission
     const requestForm = document.getElementById("request-form");
     if (requestForm) {
         requestForm.addEventListener("submit", function(event) {
@@ -18,13 +16,12 @@
                 details: document.getElementById("details").value
             };
 
-            emailjs.send("service_q29ap6f", "template_ua8rjpb", formData) // Replace with your Service ID and Template ID
+            // Send to admin only
+            emailjs.send("service_q29ap6f", "template_ua8rjpb", formData)
                 .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    alert(`Thank you, ${formData.name}! Your booking is confirmed.\nDetails:\n- Service: ${formData.service}\n- Project: ${formData.project_type}\n- Location: ${formData.location}\n- Details: ${formData.details}\nWe’ll contact you soon.`);
+                    alert(`Thank you, ${formData.name}! Your booking/enquiry has been received. We’ll contact you soon.`);
                     requestForm.reset();
                 }, function(error) {
-                    console.error('FAILED...', error);
                     alert(`Booking failed: ${error.text || 'Unknown error'}. Please try again or contact us.`);
                 });
         });
@@ -43,17 +40,14 @@
                 details: document.getElementById("join-details").value
             };
 
-            emailjs.send("service_q29ap6f", "template_ua8rjpb", formData) // Replace with your Service ID and Template ID
+            // Send to admin only
+            emailjs.send("service_q29ap6f", "template_ua8rjpb", formData)
                 .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    alert(`Thank you, ${formData.name}! Your application has been received.\nDetails:\n- Experience: ${formData.experience} years\n- Skills: ${formData.skills}\n- Details: ${formData.details}\nWe’ll review it soon.`);
+                    alert(`Thank you, ${formData.name}! Your application has been received. We’ll review it soon.`);
                     joinForm.reset();
                 }, function(error) {
-                    console.error('FAILED...', error);
                     alert(`Application failed: ${error.text || 'Unknown error'}. Please try again or contact us.`);
                 });
         });
     }
-}
-
-
+})();
