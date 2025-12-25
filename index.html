@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<section id="qa"></section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hire expert civil engineers for construction planning, BOQ preparation, and AutoCAD design in Dubai and worldwide.">
+    <meta name="keywords" content="civil engineering freelancing, hire civil engineers, construction planning, BOQ preparation, AutoCAD design, Primavera scheduling, remote civil engineering, Dubai civil engineering, civil engineering for contractors, civil engineering for students">
+    <meta name="author" content="Your Name">
+    <meta name="google-site-verification" content="gZLoEF3x7CdphjXsFr1gpbfeF7v1R2UJnSfXJwvzdmw" />
+    <meta name="msvalidate.01" content="319416FBD747BD3F10FE06E931D537D9" />
+    <title>Engineering Assistant - Home & Civil Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            
+            <div class="logo"> Build 101  </div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" onclick="toggleServiceMenu()">Services ▼</a>
+                    <div class="dropdown-menu" id="serviceMenu">
+                        <div class="menu-col">
+                            <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('project-design')">Project Design ➜</a>
+                            <div class="submenu" id="submenu-project-design" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Concept Plan', 'Develop initial concept and layout design based on client requirements and site conditions.')">Concept Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('2D Plan', 'Detailed 2-dimensional architectural and technical drawings.')">2D Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('3D Plan', '3-dimensional visualization and modeling of your project.')">3D Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Interior Design', 'Complete interior design solutions with material specifications.')">Interior Design</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Structural Plan', 'Structural engineering design and calculations.')">Structural Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('MEP Plan', 'Mechanical, Electrical, Plumbing design and coordination.')">MEP Plan</a>
+                        </div>
+                            <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('commercial')">Commercial ➜</a>
+                        <div class="submenu" id="submenu-commercial" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Cash flow', 'Project cash flow analysis and forecasting.')">Cash flow</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Profit vs loss analysis', 'Comprehensive profit and loss statement analysis.')">Profit vs loss analysis</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Project Cost Report', 'Detailed cost breakdown and budget analysis.')">Project Cost Report</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Return on Investment', 'ROI calculations and financial projections.')">Return on Investment</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Loan Assistant', 'Assistance with loan documentation and applications.')">Loan Assistant</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Client Bill Preparation', 'Invoice and billing preparation and management.')">Client Bill Preparation</a>
+                        </div>
+                            <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('initiate')">Initiate ➜</a>
+                           <div class="submenu" id="submenu-initiate" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Soil Investigation Report', 'Comprehensive soil testing and analysis report.')">Soil Investigation Report</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Initial Survey Report', 'Site survey and baseline documentation.')">Initial Survey Report</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Borewell / Open Well', 'Design and planning for water supply systems.')">Borewell / Open Well</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Site office Setup', 'Project site office establishment and management.')">Site office Setup</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Pre Inspection Report', 'Pre-construction inspection and documentation.')">Pre Inspection Report</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Feasibility study', 'Project feasibility analysis and recommendations.')">Feasibility study</a>
+                        </div>
+                           <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('legal')">Legal / Close Out ➜</a>
+                        <div class="submenu" id="submenu-legal" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Legal Opinion', 'Expert legal advice and opinions on construction matters.')">Legal Opinion</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Construction law', 'Construction law consultation and compliance.')">Construction law</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Disputed claim', 'Resolution and documentation of disputed claims.')">Disputed claim</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Completion Certificate', 'Project completion certification and handover.')">Completion Certificate</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Settlement deed', 'Legal settlement and closure documentation.')">Settlement deed</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('As Built Assistant', 'As-built documentation and final records.')">As Built Assistant</a>
+                        </div>
+                           <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('contracts')">Contracts / QS ➜</a>
+                        <div class="submenu" id="submenu-contracts" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Agreement draft', 'Contract drafting and documentation.')">Agreement draft</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Contractual Letter', 'Professional contractual correspondence.')">Contractual Letter</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Request for Proposal', 'RFP preparation and bidding support.')">Request for Proposal</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Quantity surveying', 'Detailed quantity takeoff and estimation.')">Quantity surveying</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Prepare Bill of Quantities', 'BOQ preparation for accurate costing.')">Prepare Bill of Quantities</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Variation cost Analysis', 'Analysis of cost variations and claims.')">Variation cost Analysis</a>
+                        </div>
+                        
+                           <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('planning')">Planning ➜</a>
+                           <div class="submenu" id="submenu-planning" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Project Performance Report', 'Regular project status and performance reporting.')">Project Performance Report</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Manpower Histogram', 'Resource planning and workforce scheduling.')">Manpower Histogram</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Process Flowchart', 'Process mapping and workflow optimization.')">Process Flowchart</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('S Curve', 'Project progress curve analysis.')">S Curve</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Risk Management Plan', 'Comprehensive risk identification and mitigation.')">Risk Management Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Roadmap', 'Strategic project timeline and milestones.')">Roadmap</a>
+                        </div>
+
+                            <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('execution')">Execution ➜</a>
+                        <div class="submenu" id="submenu-execution" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Project Execution Plan', 'Detailed execution strategy and methodology.')">Project Execution Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Construction Audit', 'Regular audits and quality checks.')">Construction Audit</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Risk Identification', 'On-site risk assessment and management.')">Risk Identification</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Formwork Scheme', 'Temporary works and formwork design.')">Formwork Scheme</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Mechanical works', 'Mechanical systems installation and testing.')">Mechanical works</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Standard Operating Procedure', 'SOP development and implementation.')">Standard Operating Procedure</a>
+                        </div>
+                            <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('safety')">Safety ➜</a>
+                        <div class="submenu" id="submenu-safety" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Project HSE Plan', 'Health, Safety and Environment planning.')">Project HSE Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Safety Audit', 'Regular safety audits and compliance checks.')">Safety Audit</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Evacuation Plan', 'Emergency evacuation and safety procedures.')">Evacuation Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Traffic Control Plan', 'Site traffic management and safety.')">Traffic Control Plan</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Safety Training', 'Site safety training programs.')">Safety Training</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Best Practices', 'Industry best practices implementation.')">Best Practices</a>
+                        </div>
+                            <a href="javascript:void(0)" class="category-link" onclick="toggleSubmenu('documents')">Documents ➜</a>
+                        
+                        <div class="submenu" id="submenu-documents" style="display:none;">
+                            <a href="javascript:void(0)" onclick="showServiceDetail('IS Code', 'Indian Standards compliance and documentation.')">IS Code</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('BS Code', 'British Standards compliance and documentation.')">BS Code</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('US Code', 'US Standards compliance and documentation.')">US Code</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('FIDIC', 'FIDIC contract framework implementation.')">FIDIC</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('JCT code', 'JCT contract terms and conditions.')">JCT code</a>
+                            <a href="javascript:void(0)" onclick="showServiceDetail('Reports format', 'Professional report preparation and formatting.')">Reports format</a>
+                        </div>    <div class="menu-divider"></div>
+                            <a href="services.html">View All Services</a>
+                        </div>
+                      </div>
+                </div>
+                
+                </div>
+                <a href="QA.html">Q&A</a>
+                <a href="ebooks.html">ebooks</a>
+                <a href="#bookings">Enquiry</a>
+                <a href="templates.html">Templates</a>
+                <a href="software.html">Software</a>
+                <a href="articles.html">Articles</a>
+                <a href="#join">Join with Us</a>
+                </div>
+                
+        </nav>
+       <section class="hero">
+    <div class="hero-content">
+        <div class="hero-description">
+            <h1>Your Trusted Partner in Civil Engineering Excellence</h1>
+            <h1>Welcome to Our Platform</h1>
+            <p>This is a premier online platform designed to connect clients with expert civil engineers for a wide range of professional services, delivered with precision and convenience. We bring world-class civil engineering solutions directly to your doorstep to anywhere globally. Launched with a vision to empower construction projects, freelancers, and students alike, our website serves as a one-stop hub for all your engineering needs, blending cutting-edge technology with personalized expertise.</p>
+            <p>our mission is to simplify the complexities of civil engineering by offering accessible, high quality services tailored to your unique requirements. We aim to bridge the gap between clients, ranging from individual homeowners to large scale contractors and a network of skilled professionals, ensuring every project, big or small, is executed with excellence. Our commitment is to deliver timely, cost-effective, and reliable solutions while adhering to local standards, such as Singapore regulations.</p>
+            <a href="#bookings" class="cta-button" style="margin: 15px 0; display: inline-block;">Enquiry Now</a>
+            <h2 style="margin-top: 10px; margin-bottom: 10px;">Our Major Services</h2>
+            <div class="services-showcase">
+                <div class="service-tile" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <h3>Project Planning</h3>
+                    <p>Comprehensive planning services including project performance reports, manpower histograms, S-curves, contingency plans, risk management, and Power BI dashboards to ensure projects stay on schedule and budget.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <h3>Project Design</h3>
+                    <p>Full design solutions from concept to detailed drawings: 2D/3D plans, interior design, structural & MEP plans, approved layouts, stability certificates, shop drawings, technical data, and schematic designs.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <h3>Commercial</h3>
+                    <p>Financial and commercial support: cash flow analysis, profit/loss reports, project cost tracking, ROI calculations, loan assistance, bank support, and bill preparation for clients/subcontractors.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <h3>Initiate</h3>
+                    <p>Project startup services: soil investigation, initial surveys, borewell/open well planning, site office setup, temporary utilities, mobilization plans, land assessment, and feasibility studies.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <h3>Legal / Close Out</h3>
+                    <p>Legal and closure expertise: legal opinions, construction law advice, dispute resolution, completion certificates, close-out strategies, as-built documentation, and commissioning plans.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <h3>Contracts / QS</h3>
+                    <p>Contract and quantity surveying: agreement drafting, BOQ preparation, material reconciliation, variation analysis, cost efficiency reviews, budget preparation, and cost-benefit analysis.</p>
+                </div>
+                
+                <div class="service-tile" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                    <h3>Execution</h3>
+                    <p>On-site execution support: execution plans, construction audits, risk identification, formwork schemes, machinery erection, MEP/civil/structural works, and weekly inspection reports.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #2e2e78 0%, #662e7e 100%);">
+                    <h3>Safety</h3>
+                    <p>HSE services: safety plans, audits, evacuation/traffic plans, calibration certificates, training/induction, toolbox talks, and statistical safety reporting.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #fec163 0%, #de2763 100%);">
+                    <h3>Statutory</h3>
+                    <p>Compliance assistance: company/GST registration, permits, labor licenses, practice licenses, CAR/WCP/ESI policies, and green building reports.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);">
+                    <h3>Documents</h3>
+                    <p>Documentation support: access to IS/BS/US codes, FIDIC/JCT formats, report templates, data analysis, and project document management.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                    <h3>Finance</h3>
+                    <p>Financial advisory: REIT guides, real estate investment, debt/equity advisory, marketing (online/offline), government subsidies, and property management.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);">
+                    <h3>General</h3>
+                    <p>Miscellaneous services: tenant representation, document translation, business plans, rental agreements, compliance expertise, content writing, and website development.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #4158d0 0%, #c850c0 100%);">
+                    <h3>Quality</h3>
+                    <p>Quality assurance: defect/snag tracking, audits, corrective actions, work method statements, PERT/Six Sigma analysis, and quality control charts.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);">
+                    <h3>Schedule</h3>
+                    <p>delay/claim analysis, timeline extensions, Scheduling services: baseline/recovery/tracking programs, milestone/micro/mitigation schedules, monthly/weekly reports, and progress presentations.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);">
+                    <h3>Specialized Works</h3>
+                    <p>Niche construction: demolition, piling, swimming pools, lifts, waterproofing, ETP/STP/WTP, DG sets, MEP, landscape, and glazing.</p>
+                </div>
+                <div class="service-tile" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <h3>Software Tutor</h3>
+                    <p>Training in tools: BIM, AutoCAD, Primavera, MS Project, Revit, Navisworks, Planswift, Tekla, simulation, Power BI, and virtual assistance.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+    </header>
+    <main>
+        <section id="services" style="display:none;">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="design.png" alt="Project Planning">
+                    <h3>Project Design</h3>
+                    <ul class="service-list">
+                        <li>Concept Plan</li>
+                        <li>2D Plan</li>
+                        <li>3D Plan</li>
+                        <li>Interior</li>
+                        <li>Structural Plan</li>
+                        <li>MEP Plan</li>
+                        <li>Approved layout</li>
+                        <li>Design Brief Report</li>
+                        <li>Stability Certificate</li>
+                        <li>Shop drawing</li>
+                        <li>Technical data</li>
+                        <li>Schematic Design</li>
+                        </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Design">
+                    <h3>Commercial</h3>
+                    <ul class="service-list">
+                        <li>Cash flow</li>
+                        <li>Profit vs loss analysis</li>
+                        <li>Project Cost Report</li>
+                        <li>Payment Liability Reports</li>
+                        <li>Expenses as on date</li>
+                        <li>Return on Investment</li>
+                        <li>Loan Assistant</li>
+                        <li>Current Account Opening</li>
+                        <li>Bank Overdraft Support</li>
+                        <li>Client Bill Preparation</li>
+                        <li>Sub Contractor Bill Preparation</li>
+                        <li>Escalation Bill</li>
+                        </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Audit">
+                    <h3>Initiate</h3>
+                    <ul class="service-list">
+                        <li>Soil Investigation Report</li>
+                        <li>Initial Survey Report</li>
+                        <li>Borewell / Open Well</li>
+                        <li>Site office </li>
+                        <li>Water Supply / Temporary Power </li>
+                        <li>Pre Inspection Report</li>
+                        <li>Mobilisation plan </li>
+                        <li>Land assesment</li>
+                        <li>Boomi Pooja</li>
+                        <li>Vaastu</li>
+                        <li>Feasibility study</li>
+                        <li>Land development</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Execution">
+                    <h3>Legal / Close Out</h3>
+                    <ul class="service-list">
+                        <li>Legal Opinion</li>
+                        <li>Construction law</li>
+                        <li>Disputed claim</li>
+                        <li>Legal advice</li>
+                        <li>Completion Certificate </li>
+                        <li>Close Out Strategy</li>
+                        <li>Settlement deed</li>
+                        <li>As Built Assistant</li>
+                        <li>Testing & Commsioning Plan</li>
+                        <li>Demobilization Plan</li>
+                        <li>Case Study </li>
+                        <li>Pre Commissioning Report</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Contracts">
+                    <h3>Contracts / QS</h3>
+                    <ul class="service-list">
+                        <li>Agreement draft </li>
+                        <li>Contractual Letter</li>
+                        <li>Request for Proposal</li>
+                        <li>Quantity surveying</li>
+                        <li>Prepare Bill of Quantities</li>
+                        <li>Material Reconciliation</li>
+                        <li>Variation cost Analysis</li>
+                        <li>Cost efficiency Method</li>
+                        <li>Hidden Cost analysis</li>
+                        <li>Budget Preparation </li>
+                        <li>Basic Price Finalization</li>
+                        <li>Cost-benefit analysis</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Estimation">
+                    <h3>Planning</h3>
+                    <ul class="service-list">
+                        <li>Project Performance Report</li>
+                        <li>Manpower Histogram</li>
+                        <li>Process Flowchart </li>
+                        <li>S Curve</li>
+                        <li>Contigency Plan</li>
+                        <li>Machinery Requirement Calculation</li>
+                        <li>Material Requirement Assistant</li>
+                        <li>Risk Management Plan</li>
+                        <li>Project dashboard Power BI </li>
+                        <li>Root cause analysis</li>
+                        <li>Scrum master</li>
+                        <li>Roadmap</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Valuation">
+                    <h3>Execution</h3>
+                    <ul class="service-list">
+                        <li>Project Execution Plan</li>
+                        <li>Construction Audit</li>
+                        <li>Risk Identification</li>
+                        <li>Maintenance </li>
+                        <li>Formwork Scheme</li>
+                        <li>Machines erection</li>
+                        <li>Mechanical low side works</li>
+                        <li>Electrical low side works</li>
+                        <li>Civil / Interior Execution</li>
+                        <li>Structural steel works</li>
+                        <li>Standard Operating Procedure </li>
+                        <li>Weekly inspection Report</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Legal">
+                    <h3>Safety</h3>
+                    <ul class="service-list">
+                        <li>Project HSE Plan</li>
+                        <li>Safety Audit</li>
+                        <li>Evacuation Plan</li>
+                        <li>Traffic Control Plan</li>
+                        <li>Calibaration Certificate</li>
+                        <li>Safety Training</li>
+                        <li>Safety induction</li>
+                        <li>Best Practices</li>
+                        <li>HSE Statics report</li>
+                        <li>Tool Box Talk Draft</li>
+                        <li>Statistical analysis </li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Statutory">
+                    <h3>Planning</h3>
+                    <ul class="service-list">
+                        <li>Work Break structure</li>
+                        <li>Delay analysis / Claim,</li>
+                        <li>Time line Extension</li>
+                        <li>Logistic Plan</li>
+                        <li>Communication Protocal</li>
+                        <li>SWOT analysis</li>
+                        <li>Strategy / Problem Solving</li>
+                        <li>Key Performance Index </li>
+                        <li>What-if scenario analysis</li>
+                        <li>Continuous Improvement Tools</li>
+                        <li>responsibility assignment matrix</li>
+                        <li>Baseline Program / Tracking Schedule</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Accounts">
+                    <h3>Documents</h3>
+                    <ul class="service-list">
+                        <li>IS Code </li>
+                        <li>BS Code</li>
+                        <li>US Code</li>
+                        <li>Measurement - Rics (BOMI)</li>
+                        <li>FIDIC</li>
+                        <li>JCT code</li>
+                        <li>Reports format</li>
+                        <li>Data analysis</li>
+                        <li>Email management</li>
+                        <li>Data management</li>
+                        <li>Data entry</li>
+                        <li>Project Template</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Purchase">
+                    <h3>Finance</h3>
+                    <ul class="service-list">
+                        <li>REIT Guide</li>
+                        <li>Invest in Real Estate </li>
+                        <li>Debt advisory</li>
+                        <li>Equity advisory</li>
+                        <li>Online Marketing</li>
+                        <li>Offline Marketing</li>
+                        <li>Promotion Video Content</li>
+                        <li>Layout promotion</li>
+                        <li>Government subsidies</li>
+                        <li>Property Management</li>
+                        <li>Lease / Space advisory</li>
+                        <li>Sale deed</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Supply">
+                    <h3>General</h3>
+                    <ul class="service-list">
+                        <li>Tenant represntation</li>
+                        <li>Third Party review</li>
+                        <li>Documents translation</li>
+                        <li>Business Plan</li>
+                        <li>Rental agreement</li>
+                        <li>Complaince expert</li>
+                        <li>Content writer</li>
+                        <li>App Development</li>
+                        <li>Career Growth</li>
+                        <li>Freelance Job</li>
+                        <li>Pre Qualification / Logo Making</li>
+                        <li>Website </li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="HSE">
+                    <h3>Quality</h3>
+                    <ul class="service-list">
+                        <li>Issue Defects / Snag </li>
+                        <li>Quality Audit</li>
+                        <li>Repair / Rework Assistant</li>
+                        <li>Site Observation</li>
+                        <li>Corrective action report</li>
+                        <li>Work Method Statement</li>
+                        <li>PERT analysis</li>
+                        <li>Six Sigma </li>
+                        <li>Fish bone diagram</li>
+                        <li>Scatter diagram</li>
+                        <li>Agile flow chart</li>
+                        <li>Burndown Chart</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Quality">
+                    <h3>Schedule</h3>
+                    <ul class="service-list">
+                        <li>Baseline Program</li>
+                        <li>Recovery Program</li>
+                        <li>Tracking Program</li>
+                        <li>Milestone Schedule</li>
+                        <li>Contingency Plan</li>
+                        <li>Micro Schedule</li>
+                        <li>Mitigation Schedule </li>
+                        <li>Integrated Schedule </li>
+                        <li>Monthly Report </li>
+                        <li>Weekly Report</li>
+                        <li>Progress PPT </li>
+                        <li>Productivity Report</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="IT Support">
+                    <h3>Specialized workst</h3>
+                    <ul class="service-list">
+                       <li>Specialized work service</li>
+                        <li>Demolition</li>
+                        <li>Piling </li>
+                        <li>Swimming Pool</li>
+                        <li>Lift</li>
+                        <li>Interior</li>
+                        <li>Waterproofing</li>
+                        <li>ETP, STP & WTP</li>
+                        <li>DG</li>
+                        <li>MEP works</li>
+                        <li>Landscape</li>
+                        <li>Glazing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Hire">
+                    <h3>Software Tutor</h3>
+                    <ul class="service-list">
+                        <li>BIM Analysis</li>
+                        <li>Autocad</li>
+                        <li>Primavera</li>
+                        <li>MS Project</li>
+                        <li>MS Office</li>
+                        <li>Revit </li>
+                        <li>Navis work</li>
+                        <li>Planswift</li>
+                        <li>Tekla</li>
+                        <li>Simulation analysis</li>
+                        <li>Power PI</li>
+                        <li>Virtual Assistant</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Sales">
+                    <h3>Statutory</h3>
+                    <ul class="service-list">
+                       <li>Company Registration</li>
+                        <li>Articles of Agreement (AOA)</li>
+                        <li>GST Registration</li>
+                        <li>Import / Export Support</li>
+                        <li>Permanent Power </li>
+                        <li>Permit & regulations</li>
+                        <li>Labour license</li>
+                        <li>Practice License</li>
+                        <li>CAR Policy Assistant</li>
+                        <li>WCP / ESI Assistant</li>
+                        <li>Heat Reduce Assisant </li>
+                        <li>Green Building Report</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="design.png" alt="Resources">
+                    <h3>SCM</h3>
+                    <ul class="service-list">
+                        <li>Vendor Finalization</li>
+                        <li>Finishing Material Selection</li>
+                        <li>Vendor Performance Report</li>
+                        <li>Specilized Vendor Assistant</li>
+                        <li>Request for quotation</li>
+                        <li>Longlead Item Finalization</li>
+                        <li>Prepare Purchase / Work Order </li>
+                        <li>Extra Work Review</li>
+                        <li>Depreciation Calculation</li>
+                        <li>Value Engineering</li>
+                        <li>Building Work Completed Valuation</li>
+                        <li>Insurance Damage Claim</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="bookings">
+            <h2>Book a Service</h2>
+            <div class="section-with-image">
+                <div class="section-content">
+                    <form id="request-form" method="POST">
+                        <div class="form-grid">
+                            <div>
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div>
+                                <label for="service">Service:</label>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <optgroup label="Project Design">
+                                        <option value="Concept Plan">Concept Plan</option>
+                                        <option value="2D Plan">2D Plan</option>
+                                        <option value="3D Plan">3D Plan</option>
+                                        <option value="Interior Design">Interior Design</option>
+                                        <option value="Structural Plan">Structural Plan</option>
+                                        <option value="MEP Plan">MEP Plan</option>
+                                    </optgroup>
+                                    <optgroup label="Commercial">
+                                        <option value="Cash flow">Cash flow</option>
+                                        <option value="Profit vs loss">Profit vs loss analysis</option>
+                                        <option value="Project Cost Report">Project Cost Report</option>
+                                        <option value="ROI">Return on Investment</option>
+                                    </optgroup>
+                                    <optgroup label="Initiate">
+                                        <option value="Soil Investigation">Soil Investigation Report</option>
+                                        <option value="Survey Report">Initial Survey Report</option>
+                                        <option value="Feasibility study">Feasibility study</option>
+                                    </optgroup>
+                                    <optgroup label="Legal">
+                                        <option value="Legal Opinion">Legal Opinion</option>
+                                        <option value="Completion Certificate">Completion Certificate</option>
+                                    </optgroup>
+                                    <optgroup label="Contracts/QS">
+                                        <option value="Agreement draft">Agreement draft</option>
+                                        <option value="BOQ">Bill of Quantities</option>
+                                        <option value="Quantity surveying">Quantity surveying</option>
+                                    </optgroup>
+                                    <optgroup label="Planning">
+                                        <option value="Baseline Schedule">Baseline Schedule</option>
+                                        <option value="Risk Management">Risk Management Plan</option>
+                                    </optgroup>
+                                    <optgroup label="Execution">
+                                        <option value="Execution Plan">Project Execution Plan</option>
+                                        <option value="Construction Audit">Construction Audit</option>
+                                    </optgroup>
+                                    <optgroup label="Safety">
+                                        <option value="HSE Plan">Project HSE Plan</option>
+                                        <option value="Safety Audit">Safety Audit</option>
+                                    </optgroup>
+                                    <optgroup label="Documents">
+                                        <option value="IS Code">IS Code Compliance</option>
+                                        <option value="BS Code">BS Code Compliance</option>
+                                    </optgroup>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="project-type">Project Type:</label>
+                                <select id="project-type" name="project_type" required>
+                                    <option value="" disabled selected>Select project type</option>
+                                    <option value="Residential">Residential</option>
+                                    <option value="Commercial">Commercial</option>
+                                    <option value="Industrial">Industrial</option>
+                                    <option value="Infrastructure">Infrastructure</option>
+                                    <option value="Other">Other</option>
+
+                                </select>
+                            </div>
+                            <div>
+                                <label for="location">Location:</label>
+                                <input type="text" id="location" name="location" placeholder="e.g., Dubai, UAE" required>
+                            </div>
+                            <div class="full-width">
+                                <label for="details">Details:</label>
+                                <textarea id="details" name="details" placeholder="Describe your requirements" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+                <div class="section-image placeholder">
+                    <img src="103.png" alt="Enquiry Service" onerror="this.parentElement.innerHTML = '[Image Area - Add 102.png]'" />
+                </div>
+            </div>
+        </section>
+        
+        <section id="join">
+            <h2>Join with Us</h2>
+            <div class="section-with-image">
+                <div class="section-content">
+                    <p style="text-align: center; margin-bottom: 20px;">Become a freelance civil engineer and join our network of professionals.</p>
+                    <form id="join-form" method="POST">
+                        <div class="form-grid">
+                            <div>
+                                <label for="join-name">Full Name:</label>
+                                <input type="text" id="join-name" name="join_name" placeholder="Enter your name" required>
+                            </div>
+                            <div>
+                                <label for="join-email">Email:</label>
+                                <input type="email" id="join-email" name="join_email" placeholder="Enter your email" required>
+                            </div>
+                            <div>
+                                <label for="join-experience">Experience (Years):</label>
+                                <input type="number" id="join-experience" name="join_experience" placeholder="e.g., 5" required>
+                            </div>
+                            <div>
+                                <label for="join-skills">Skills:</label>
+                                <input type="text" id="join-skills" name="join_skills" placeholder="e.g., AutoCAD, Primavera" required>
+                            </div>
+                            <div class="full-width">
+                                <label for="join-details">Additional Details:</label>
+                                <textarea id="join-details" name="join_details" placeholder="Tell us about yourself" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </div>
+                <div class="section-image placeholder">
+                    <img src="102.jpg" alt="Join Professional Network" onerror="this.parentElement.innerHTML = '[Image Area - Add 103.png]'" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Detail Modal -->
+    <div id="serviceDetailModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeServiceDetail()">&times;</span>
+            <h2 id="serviceName"></h2>
+            <p id="serviceDescription"></p>
+            <div class="modal-divider"></div>
+            <button class="btn-enquiry" onclick="scrollToBookingForm()">Raise Enquiry</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+        <a href="https://www.quora.com/profile/Ananda-Prakash-10" target="_blank"><i class="fab fa-quora"></i> Quora</a>
+        <a href="https://www.youtube.com/channel/Your-Channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="https://play.google.com/store/apps/details?id=com.sap.build101" target="_blank"><i class="Mobile app"></i> Download App</a>
+        </div>
+        <p class="copyright">&copy; 2025 Engineering Assistant. All rights reserved. | As of August 20, 2025</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function toggleServiceMenu() {
+            const menu = document.getElementById('serviceMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleSubmenu(id) {
+            const submenu = document.getElementById('submenu-' + id);
+            const allSubmenus = document.querySelectorAll('.submenu');
+            
+            allSubmenus.forEach(sub => {
+                if (sub.id !== 'submenu-' + id) {
+                    sub.style.display = 'none';
+                }
+            });
+            
+            submenu.style.display = submenu.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function showServiceDetail(serviceName, description) {
+            document.getElementById('serviceName').textContent = serviceName;
+            document.getElementById('serviceDescription').textContent = description;
+            document.getElementById('serviceDetailModal').style.display = 'block';
+            // Store service name for pre-filling the form later
+            window.selectedService = serviceName;
+        }
+
+        function closeServiceDetail() {
+            document.getElementById('serviceDetailModal').style.display = 'none';
+        }
+
+        function scrollToBookingForm() {
+            closeServiceDetail();
+            const bookingSection = document.getElementById('bookings');
+            if (bookingSection) {
+                bookingSection.scrollIntoView({ behavior: 'smooth' });
+                // Pre-fill the service type if available
+                const serviceSelect = document.getElementById('service-type');
+                if (serviceSelect && window.selectedService) {
+                    // Try to find and select the service
+                    for (let option of serviceSelect.options) {
+                        if (option.text.toLowerCase().includes(window.selectedService.toLowerCase())) {
+                            serviceSelect.value = option.value;
+                            break;
+                        }
+                    }
+                    // If not found, set custom value
+                    if (!serviceSelect.value) {
+                        serviceSelect.value = window.selectedService;
+                    }
+                }
+            }
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('serviceDetailModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.dropdown');
+            if (!dropdown.contains(event.target)) {
+                document.getElementById('serviceMenu').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

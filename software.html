@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Software Tutor - Engineering Assistant</title>
+    <meta name="description" content="Software training: AutoCAD, Revit, BIM, Primavera, MS Project, MS Office">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo"><a href="index.html"><img src="logo.png" alt="Build 101"></a></div>
+            <div class="nav-links">
+                <a href="index.html" class="home-link">Home</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page-intro">
+            <p>We write and publish construction-focused books and build software apps that solve common on-site and project management problems — estimation, daily progress reporting, manpower planning and more.</p>
+        </div>
+        <section class="software-section">
+            <section class="articles-section">
+            <h1>Software App Development</h1>
+            <p>Software development services for construction professionals.</p>
+            <div class="hero-content">
+                <div class="hero-description">
+                    <h3>Daily Progress Report</h3>
+                    <p>Project Daily Update is an all-in-one mobile solution designed for construction professionals to easily record, manage, and report daily site progress. Whether you're working on a high-rise building, infrastructure, MEP works, or industrial projects, this app helps you document each day's activities quickly and professionally.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.sap.dailyreport" class="read-more">Read More</a>
+                </div>
+                <div class="hero-image">
+                <img src="301.jpg" alt="Daily Progress report" />
+                </div>
+            
+        </section>
+        
+        <section class="articles-section">
+        
+            <div class="hero-content">
+                <div class="hero-description">
+                    <h3>Houe Construction estimate</h3>
+                    <p> Plan your construction project with confidence using our Building Estimation Assistant App!
+
+                    Whether you're a homeowner, contractor, or part-time estimator, our app helps you plan and manage your construction budget efficiently..
+                    <a href="https://play.google.com/store/apps/details?id=com.sap.estimate" class="read-more">Read More</a>
+                </div>
+                <div class="hero-image">
+                <img src="302.jpg" alt="What is the construction cost" />    
+                </div>
+                
+        </section>              
+        
+        <section class="articles-section">
+        
+            <div class="hero-content">
+                <div class="hero-description">
+                    <h3>Manpower Calculation</h3>
+                    <p> Optimize your workforce. Boost your efficiency.
+Easily calculate skilled and unskilled man-days based on work type, quantity, and standard productivity.
+
+Manage your construction labor like a pro with this app. This app is packed with features to help you track manpower, assess productivity, and plan with precision. it is the modern solution for construction professionals to effectively manage their workforce and boost project efficiency. Eliminate guesswork an
+                    <a href="https://play.google.com/store/apps/details?id=com.sap.manpower" class="read-more">Read More</a>
+                </div>
+                <div class="hero-image">
+                <img src="303.jpg" alt="What is the construction cost" />    
+                </div>
+                
+        </section>  
+
+        </section>
+            <h1>Software Tutor</h1>
+            <p>Training and consultancy for commonly used software in construction and project management.</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Autocad</h3>
+                    <p>2D drafting, layering, annotations, details and plotting.</p>
+                    <h3>Revit</h3>
+                    <p>Revit architecture, families, schedules and construction documentation.</p>
+                    <h3>BIM</h3>
+                    <p>BIM implementation, coordination and on-site workflows.</p>
+                    <h3>Primavera P6</h3>
+                    <p>Scheduling, resource leveling, baselines and earned value.</p>
+                    <h3>MS Project</h3>
+                    <p>Gantt creation, tracking, critical path and progress reporting.</p>
+                    <h3>MS Office</h3>
+                    <p>Excel for BOQ, templates, pivot, and PowerPoint reporting.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="mailto:testingbuild101@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="https://www.quora.com/profile/Ananda-Prakash-10" target="_blank"><i class="fab fa-quora"></i> Quora</a>
+            <a href="https://www.youtube.com/channel/Your-Channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+        <p class="copyright">&copy; 2025 Engineering Assistant. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleServiceMenu() {
+            const menu = document.getElementById('serviceMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+        document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.dropdown');
+            if (!dropdown.contains(event.target)) {
+                const menu = document.getElementById('serviceMenu');
+                if (menu) menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

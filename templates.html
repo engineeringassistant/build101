@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Templates for project management, safety and reporting.">
+    <title>Templates - Engineering Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo"><a href="index.html"><img src="logo.png" alt="Build 101"></a></div>
+            <div class="nav-links">
+                <a href="index.html" class="home-link">Home</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="templates-section">
+            <h1>Project Templates</h1>
+            <div class="template-grid">
+                <div class="template-card">
+                    <h3>Daily Progress Report</h3>
+                    <p>Track daily project progress.</p>
+                    <a class="cta-button" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1XdUAhm09wtVBARwo2fVPhYLsVLP--0qK/edit?usp=sharing&ouid=113869684213903800889&rtpof=true&sd=true">Download (.xlsx)</a>
+                </div>
+                <div class="template-card">
+                    <h3>Construction Contract Agreement (Draft)</h3>
+                    <p>Template for drafting construction contracts.</p>
+                    <a class="cta-button" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1ag8tWATmg68Q5SJV4-mYKrSkmzRMX59n/edit?usp=drive_link&ouid=113869684213903800889&rtpof=true&sd=true">Download (.xlsx)</a>
+                </div>
+                <div class="template-card">
+                    <h3>Delay Analysis Event Format</h3>
+                    <p>Templates for delay analysis event formats.</p>
+                    <a class="cta-button" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1bBpKWvIsY7SzHYW8M5QOrPn6uyUO2Ky7/edit?usp=drive_link&ouid=113869684213903800889&rtpof=true&sd=true">Download (.xlsx)</a>
+                </div>
+                <div class="template-card">
+                    <h3>DPR for MEP Works</h3>
+                    <p>MEP work progress report.</p>
+                    <a class="cta-button" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1BCU52Ytp_DWws7677ohSs4uVvvvLBRQp/edit?usp=drive_link&ouid=113869684213903800889&rtpof=true&sd=true">Download (.xlsx)</a>
+                </div>
+                <div class="template-card">
+                    <h3>Manpower Productivity Sheet</h3>
+                    <p>Manpower efficiency and productivity details.</p>
+                    <a class="cta-button" href="templates/weekly-update.pptx" download>Download (.xlsx)</a>
+                </div>
+                <div class="template-card">
+                    <h3>Material Submission Schedule</h3>
+                    <p>Material submission schedule.</p>
+                    <a class="cta-button" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1xwTZZf3c-ehjrO86hs3sUYAGD4CPYoko/edit?usp=drive_link&ouid=113869684213903800889&rtpof=true&sd=true">Download (.xlsx)</a>
+                </div>
+                <div class="template-card">
+                    <h3>Material Reconciliation Format</h3>
+                    <p>Steel material reconciliation format.</p>
+                    <a class="cta-button" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1igTQhrKIU6xgq3dgyuK1KE9YbOE1rMAA/edit?usp=drive_link&ouid=113869684213903800889&rtpof=true&sd=true">Download (.xlsx)</a>
+                </div>
+                <div class="template-card">
+                    <h3>Weekly Progress Report</h3>
+                    <p>Weekly progress report.</p>
+                    <a class="cta-button" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/11EXCng7F2yAqDYgaJMjPA97lZR0X6yEW/edit?usp=drive_link&ouid=113869684213903800889&rtpof=true&sd=true">Download (.xlsx)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.quora.com/profile/Ananda-Prakash-10" target="_blank"><i class="fab fa-quora"></i> Quora</a>
+            <a href="https://www.youtube.com/channel/Your-Channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sap.build101" target="_blank"><i class="Mobile app"></i> Download App</a>
+        </div>
+        <p class="copyright">&copy; 2025 Engineering Assistant. All rights reserved. | As of August 20, 2025</p>
+    </footer>
+
+    <script>
+        function toggleServiceMenu() {
+            const menu = document.getElementById('serviceMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+        document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.dropdown');
+            if (!dropdown.contains(event.target)) {
+                const menu = document.getElementById('serviceMenu');
+                if (menu) menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

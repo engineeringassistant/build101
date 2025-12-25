@@ -1,0 +1,16 @@
+<section id="qa">
+    <h2>Ask a Question</h2>
+    <form id="qa-form" method="POST">
+        <div class="form-grid">
+            <div>
+                <label for="qa-question">Your Question:</label>
+                <input type="text" id="qa-question" name="qa_question" placeholder="e.g., How to design a bridge?" required>
+            </div>
+            <div class="full-width">
+                <label for="qa-answer">Your Answer (Optional):</label>
+                <textarea id="qa-answer" name="qa_answer" placeholder="Provide your insights" rows="5"></textarea>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>

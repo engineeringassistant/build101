@@ -1,0 +1,16 @@
+<section id="articles">
+    <h2>Submit an Article</h2>
+    <form id="article-form" method="POST">
+        <div class="form-grid">
+            <div>
+                <label for="article-title">Title:</label>
+                <input type="text" id="article-title" name="article_title" placeholder="e.g., AutoCAD Tips" required>
+            </div>
+            <div class="full-width">
+                <label for="article-content">Content:</label>
+                <textarea id="article-content" name="article_content" placeholder="Write your article" rows="8" required></textarea>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
