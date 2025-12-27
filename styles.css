@@ -526,4 +526,36 @@ section {
     height: 360px;
 }
 
-
+/* Add at the end of styles.css */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Larger base text */
+        padding: 0 10px;
+    }
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Smaller headings */
+    }
+    .service-card, .template-card, .faq-list li {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    .services-grid, .template-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+    .faq-list {
+        padding-left: 20px;
+    }
+    .nav-links {
+        flex-direction: column; /* Stack nav on mobile */
+        gap: 1rem;
+    }
+    .cta-button {
+        padding: 1rem 2rem; /* Larger touch targets */
+        font-size: 1.1rem;
+    }
+    /* Prevent overflow */
+    p, li {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
