@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join with Us - Engineering Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo"> Build 101  </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="booking.html">Enquiry</a>
+                <a href="qa.html">Q&A</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="join">
+            <h2>Join with Us</h2>
+            <div class="section-with-image">
+                <div class="section-content">
+                    <p style="text-align: center; margin-bottom: 20px;">Become a freelance civil engineer and join our network of professionals.</p>
+                    <form id="join-form" method="POST">
+                        <div class="form-grid">
+                            <div>
+                                <label for="join-name">Full Name:</label>
+                                <input type="text" id="join-name" name="join_name" placeholder="Enter your name" required>
+                            </div>
+                            <div>
+                                <label for="join-email">Email:</label>
+                                <input type="email" id="join-email" name="join_email" placeholder="Enter your email" required>
+                            </div>
+                            <div>
+                                <label for="join-experience">Experience (Years):</label>
+                                <input type="number" id="join-experience" name="join_experience" placeholder="e.g., 5" required>
+                            </div>
+                            <div>
+                                <label for="join-skills">Skills:</label>
+                                <input type="text" id="join-skills" name="join_skills" placeholder="e.g., AutoCAD, Primavera" required>
+                            </div>
+                            <div class="full-width">
+                                <label for="join-details">Additional Details:</label>
+                                <textarea id="join-details" name="join_details" placeholder="Tell us about yourself" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </div>
+                <div class="section-image placeholder">
+                    <img src="901.jpg" alt="Join Professional Network" onerror="this.parentElement.innerHTML = '[Image Area - Add 102.jpg]'" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Engineering Assistant</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

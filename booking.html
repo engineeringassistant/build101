@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service - Engineering Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo"> Build 101  </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="qa.html">Q&A</a>
+                <a href="ebooks.html">ebooks</a>
+                <a href="templates.html">Templates</a>
+                <a href="software.html">Software</a>
+                <a href="articles.html">Articles</a>
+                <a href="join.html">Join with Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="bookings">
+            <h2>Book a Service</h2>
+            <div class="section-with-image">
+                <div class="section-content">
+                    <form id="request-form" method="POST">
+                        <div class="form-grid">
+                            <div>
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div>
+                                <label for="service">Service:</label>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <optgroup label="Project Design">
+                                        <option value="Concept Plan">Concept Plan</option>
+                                        <option value="2D Plan">2D Plan</option>
+                                        <option value="3D Plan">3D Plan</option>
+                                        <option value="Interior Design">Interior Design</option>
+                                        <option value="Structural Plan">Structural Plan</option>
+                                        <option value="MEP Plan">MEP Plan</option>
+                                    </optgroup>
+                                    <optgroup label="Commercial">
+                                        <option value="Cash flow">Cash flow</option>
+                                        <option value="Profit vs loss">Profit vs loss analysis</option>
+                                        <option value="Project Cost Report">Project Cost Report</option>
+                                        <option value="ROI">Return on Investment</option>
+                                    </optgroup>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="project-type">Project Type:</label>
+                                <select id="project-type" name="project_type" required>
+                                    <option value="" disabled selected>Select project type</option>
+                                    <option value="Residential">Residential</option>
+                                    <option value="Commercial">Commercial</option>
+                                    <option value="Industrial">Industrial</option>
+                                    <option value="Infrastructure">Infrastructure</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="location">Location:</label>
+                                <input type="text" id="location" name="location" placeholder="e.g., Dubai, UAE" required>
+                            </div>
+                            <div class="full-width">
+                                <label for="details">Details:</label>
+                                <textarea id="details" name="details" placeholder="Describe your requirements" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+                <div class="section-image placeholder">
+                    <img src="905.jpg" alt="Enquiry Service" onerror="this.parentElement.innerHTML = '[Image Area - Add 905.jpg]'" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Engineering Assistant</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
